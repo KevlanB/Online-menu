@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <link rel="icon" href="imgs/icon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Cardápio Online</title>
+    <meta name="description" content="Um cardápio online para seu Negócio" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="./imgs/logo.png" style="width: 120px" />
+        <i class="fa-solid fa-cart-shopping fa-lg" id="cart-finish"></i>
+      </div>
+      <div class="container list-container">
+        <div id="list" class="ml-auto">
+          <p class="list-title"><b>Pedidos</b></p>
+          <h3 class="list-subtitle">Lista</h3>
+          <ul id="list-items"></ul>
+          <h3 class="list-subtitle">Total</h3>
+          <p id="list-total"><b>R$0</b></p>
+          <br />
+          <div id="address-group">
+            <label for="address">endereço</label>
+            <input type="text" id="address" />
+            <button id="list-btn">pedir</button>
+          </div>
+        </div>
+      </div>
+      <div class="group" id="categories"></div>
+    </div>
+    <script type="module" src="js/def.js"></script>
+  </body>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h2>Sobre Nós</h2>
+        <p>
+          Somos uma empresa dedicada a fornecer as melhores soluções para nossos
+          clientes. Nosso compromisso é com a qualidade e a inovação.
+        </p>
+      </div>
+
+      <div class="footer-section links">
+        <h2>Navegação</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Portfólio</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section contact">
+        <h2>Contato</h2>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123, Cidade, Estado
+        </p>
+        <p><i class="fas fa-phone"></i> (12) 3456-7890</p>
+        <p><i class="fas fa-envelope"></i> contato@empresa.com</p>
+      </div>
+
+      <div class="footer-section social">
+        <h2>Redes Sociais</h2>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        &copy; <span id="year"></span> Brenner's Restaurant . Todos os direitos
+        reservados.
+      </p>
+    </div>
+  </footer>
+</html>
